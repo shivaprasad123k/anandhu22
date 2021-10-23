@@ -45,14 +45,14 @@ async def start(bot, message):
                 ident, file_id = message.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=message.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**⭕️താഴെ കാണുന്ന ജോയിൻ ബട്ടൺ അടിച്ചു ജോയിൻ ചെയ്യുക എന്നിട്ട് ഡൌൺലോഡ് എന്ന ബട്ടൺ ക്ലിക്ക് ചെയ്യുക മൂവി ലഭിക്കും💯**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("🍿 JOIN 🍿", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("🎬 DOWNLOAD 🎬", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -103,7 +103,7 @@ async def start(bot, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                        InlineKeyboardButton("🍿 JOIN 🍿", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -115,9 +115,9 @@ async def start(bot, message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
+                InlineKeyboardButton(" 🔍Search Here 🔍", switch_inline_query_current_chat='')
                 ],[
-                InlineKeyboardButton("Help", callback_data="help"),
+                InlineKeyboardButton("♻️ 𝗚𝗥𝗢𝗨𝗣 ♻️", callback_data="help"),
                 InlineKeyboardButton("About", callback_data="about")
                 ]]
             )
